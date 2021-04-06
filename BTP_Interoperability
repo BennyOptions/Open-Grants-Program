@@ -1,7 +1,7 @@
 # W3F Open Grant Proposal
 
 * **Project Name:** Blockchain Transmission Protocol
-* **Team Name:** Lydia Labs
+* **Team Name:** ICON Project
 * **Payment Address:** 0x8f56bedF306C2254c3963e8Ad022b01f02521D9a
 
 
@@ -15,41 +15,77 @@ If this is an application for a follow-up grant (the continuation of an earlier,
 
 Please provide the following:
   * If the name of your project is not descriptive, a tag line (one sentence summary).
-  The Blockchain Transmission Protocol is an open-source, generalizeable and trustless interoperability protocol between smart-contract enabled blockchains
+  The Blockchain Transmission Protocol is a general purpose interoperability solution secured entirely with cryptography that can transfer any type of data between networks.
   
   * A brief description of your project.
-  The Blockchain Transmission Protocol 
+  ICON has been working on integrating parachains with BTP technology. We will have Acala, Plasm, Moonbeam and Edgeware all complete on testnet in May with a target main net deployment in July. Our goal is to grow the adoption of BTP in the Polkadot ecosystem (and more broadly) and provide tangible value to each parachain. Here is a great explanation of our goals and progress in a recent blog post (https://medium.com/helloiconworld/blockchain-transmission-protocol-btp-working-group-update-icon-joins-forces-with-the-polkadot-63694290e15b).
   
   * An indication of how your project relates to / integrates into Substrate / Polkadot / Kusama.
+  Our BTP solution helps bridge any type of data to and from the Polkadot ecosystem. For example, Polkadot parachains will be able to seamlessly communicate with Kusama parachains, and any other network we integrate with BTP. A specific example would be a cross-chain money-market that supports Acala (Polkadot), Karura (Kusama) and ICON based assets.
+  
   * An indication of why your team is interested in creating this project.
+  We are working on BTP integration as it is in line with our vision as a project. ICON is and always has been an interoperability protocol. We view ourselves as an aggregator chain, allowing all blockchain data and smart contracts from isolated ecosystems to be called through BTP on any network connected to BTP. Our goal as a network is to grow the BTP ecosystem in both breadth and depth - having many connected blockchains and many tangible usecases within each connected network. Here is another blog post detailing our goals as a network (https://medium.com/helloiconworld/the-blockchain-of-blockchains-icon-as-an-aggregator-chain-d621255d9e2b). 
 
 ### Project Details 
 We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
 
 * Mockups/designs of any UI components
+BTP is a blockchain-based architecture and relay network that doesn't necessarily come with a specific UI, though we will build a basic UI on our block explorer to use the BTP bridge and look at BTP statistics.
+
 * Data models / API specifications of the core functionality
+Here is the functional specification - https://drive.google.com/file/d/1ow18bBLzKXW3Jhpw0VvDOs4NbZaT1GXZ/view?usp=sharing). Let me know if you need access.
+
 * An overview of the technology stack to be used
+Functional specification - https://drive.google.com/file/d/1ow18bBLzKXW3Jhpw0VvDOs4NbZaT1GXZ/view?usp=sharing
+
 * Documentation of core components, protocols, architecture, etc. to be deployed
+Here again is the functional specification with all necessary details - https://drive.google.com/file/d/1ow18bBLzKXW3Jhpw0VvDOs4NbZaT1GXZ/view?usp=sharing
+
 * PoC/MVP or other relevant prior work or research on the topic
+Functional specification - https://drive.google.com/file/d/1ow18bBLzKXW3Jhpw0VvDOs4NbZaT1GXZ/view?usp=sharing
+High-level overview - https://drive.google.com/file/d/1SP5i6zE9SrVufRh_PnBrM5TyCPZjoShm/view?usp=sharing
+Frontier precompile contract pull request (first step of this work is already complete) - https://github.com/paritytech/frontier/pull/304
+
 * What your project is _not_ or will _not_ provide or implement
   * This is a place for you to manage expectations and to clarify any limitations that might not be obvious
+  The first implementation of BTP will only be token transfer between networks. While there is no limit to possible use cases, this grant is focused specifically on building the architecture and a simple token-transfer use-case, not other use cases.
 
 ### Ecosystem Fit 
 
 Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
 
 * Where and how does your project fit into the ecosystem? 
+We fit into the ecosystem as a way for Polkadot and Kusama to communicate with both eachother and outside networks in a trustless fashion.
+
 * Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
+Our target market has two buckets: parachain (other other blockchain) developers and DApps. 
+1.) Parachains & Other Layer1 Blockchains - this is for initial integration of BTP
+2.) DApp Developers - this is for use-cases of BTP. Once a layer1 blockchain is connected, it's great to have their money-markets (as an example) plug into BTP to aggregate assets from other BTP-enabled networks.
+
 * What need(s) does your project meet? 
+We meet the demand for cross-chain communication between smart contracts and the ability to send complex data between networks.
+
 * Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem? 
+If our project were to be approved, I would say we fit right into this blog post (https://polkadot.network/polkadot-bridges-connecting-the-polkadot-ecosystem-with-external-networks/). We are most similar to Darwinia.
+
   * If so, how is your project different?
+  Sticking with Darwinia as the most comparable, we differentiate from other protocols through our Verifier contract. The Verifier contract is a smart contract deployed on all networks in the BTP Ecosystem which validates consensus and block-producer signatures from the source blockchain ensuring that no data has been tampered with. Since this is all at the smart contract layer, this process itself can't be tampered with and is as secure as the blockchain in which the Verifier contract is deployed.
+  
   * If not, are there similar projects in related ecosystems?
 
 ## Team :busts_in_silhouette:
 
 ### Team members
 * Name of team leader
+BTP is operated in a decentralized manner with many different contributors, but leading the BTP Working group is BongAn Ha (https://www.linkedin.com/in/bonganha/)
+
 * Names of team members	
+BongAn Ha - ICON
+Scott Smiley - ICON
+ICON DAO - 
+Web3Labs - https://www.web3labs.com/
+Edgeware - https://edgewa.re/
+HugoByte - https://github.com/HugoByte
 
 ### Contact
 * **Contact Name:** Full name of the contact person in your team
@@ -70,7 +106,7 @@ If anyone on your team has applied for a grant at the Web3 Foundation previously
 * https://github.com/<your_repo_2>
 
 ### Team LinkedIn Profiles
-* https://www.linkedin.com/<person_1>
+* BongAn Ha
 * https://www.linkedin.com/<person_2>
 
 ## Development Status :open_book: 
