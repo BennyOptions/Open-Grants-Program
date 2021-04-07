@@ -44,7 +44,7 @@ Here again is the functional specification with all necessary details - https://
 * PoC/MVP or other relevant prior work or research on the topic
 Functional specification - https://drive.google.com/file/d/1ow18bBLzKXW3Jhpw0VvDOs4NbZaT1GXZ/view?usp=sharing
 High-level overview - https://drive.google.com/file/d/1SP5i6zE9SrVufRh_PnBrM5TyCPZjoShm/view?usp=sharing
-Frontier precompile contract pull request (first step of this work is already complete) - https://github.com/paritytech/frontier/pull/304
+Frontier precompile contract pull request (This was the first step of this project and is already complete) - https://github.com/paritytech/frontier/pull/304
 
 * What your project is _not_ or will _not_ provide or implement
   * This is a place for you to manage expectations and to clarify any limitations that might not be obvious
@@ -55,7 +55,7 @@ Frontier precompile contract pull request (first step of this work is already co
 Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
 
 * Where and how does your project fit into the ecosystem? 
-We fit into the ecosystem as a way for Polkadot and Kusama to communicate with both eachother and outside networks in a trustless fashion.
+We fit into the ecosystem as a way for Polkadot and Kusama to communicate with both eachother and outside networks in a trustless fashion secured entirely through cryptography.
 
 * Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
 Our target market has two buckets: parachain (other other blockchain) developers and DApps. 
@@ -63,7 +63,7 @@ Our target market has two buckets: parachain (other other blockchain) developers
 2.) DApp Developers - this is for use-cases of BTP. Once a layer1 blockchain is connected, it's great to have their money-markets (as an example) plug into BTP to aggregate assets from other BTP-enabled networks.
 
 * What need(s) does your project meet? 
-We meet the demand for cross-chain communication between smart contracts and the ability to send complex data between networks.
+We meet the demand for cross-chain communication between smart contracts and the ability to send complex data between networks without relying on Proof-of-Authority Relay Networks, Proof-of-stake Relay networks, or centralized custodians.
 
 * Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem? 
 If our project were to be approved, I would say we fit right into this blog post (https://polkadot.network/polkadot-bridges-connecting-the-polkadot-ecosystem-with-external-networks/). We are most similar to Darwinia.
@@ -77,7 +77,7 @@ If our project were to be approved, I would say we fit right into this blog post
 
 ### Team members
 * Name of team leader
-BTP is operated in a decentralized manner with many different contributors, but leading the BTP Working group is BongAn Ha (https://www.linkedin.com/in/bonganha/)
+BTP is operated in a decentralized manner with many different contributors, but leading the BTP Working group is BongAn Ha from the ICON Project team. (https://www.linkedin.com/in/bonganha/)
 
 * Names of team members	
 BongAn Ha - ICON
